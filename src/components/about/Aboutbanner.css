@@ -1,0 +1,30 @@
+.contact-banner {
+  display: flex;
+  align-items: center;
+  color: white;
+  min-height: 340px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              var(--background-image) center/cover no-repeat;
+}
+
+.contact-banner .container {
+  text-align: start;
+}
+
+.contact-banner h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.contact-banner .breadcrumb {
+  margin-top: 0.5rem;
+}
+
+.contact-banner .breadcrumb-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-banner .breadcrumb-item.active {
+  color: #ffc107;
+}

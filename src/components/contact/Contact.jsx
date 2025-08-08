@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import PageBanner from "./Contactbanner";
 import backgroundImage from "../../assets/images/contact.avif";
 import FloatingSidebar from "../floatingsidebar/FloatingSidebar";
-import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 import "./Contact.css";
 
 function Contact() {
@@ -14,8 +14,7 @@ function Contact() {
 
       {/* Floating Sidebar */}
       <FloatingSidebar />
-
-
+      
 
       {/* Content Section */}
       <section id="contact" className="contact-section">
@@ -148,9 +147,9 @@ function Contact() {
           </div>
         </div>
       </section>
-      <Footer />
+
     </>
   );
 }
 
-export default Contact;
+export default Contact

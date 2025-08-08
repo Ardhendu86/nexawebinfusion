@@ -3,8 +3,7 @@ import Aboutbanner from "./Aboutbanner";
 import FloatingSidebar from "../floatingsidebar/FloatingSidebar";
 import aboutImage from "../../assets/images/aboutbanner.jpg";
 import Image from "../../assets/images/about.png";
-import "./About.css"; // custom styles
-import Footer from "../footer/Footer";
+import "./About.css"; 
 
 function About() {
   const aboutSectionRef = useRef(null);
@@ -180,11 +179,9 @@ function About() {
           </div>
         </div>
       </section>
-
-
-      <Footer />
+      
     </>
   );
 }
 
-export default About;
+export default About

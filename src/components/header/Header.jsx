@@ -91,7 +91,7 @@ function Header() {
                 </li>
 
                 {/* Service Dropdown with mobile toggle */}
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <div className="d-flex align-items-center justify-content-between px-3 py-2">
                     <Link
                       className="nav-link dropdown-toggle fw-semibold p-0"
@@ -104,7 +104,7 @@ function Header() {
                     >
                       Services
                     </Link>
-                    {/* Plus sign toggle button visible only on mobile */}
+                    
                     <button
                       className="btn btn-link d-lg-none p-0 ms-2"
                       onClick={toggleServices}
@@ -130,7 +130,7 @@ function Header() {
                     <li><Link className="dropdown-item" to="/service/ui-ux-design">UI/UX Design</Link></li>
                     <li><Link className="dropdown-item" to="/service/ecommerce">E-commerce Solutions</Link></li>
                   </ul>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Link className="nav-link fw-semibold px-3 py-2" to="/portfolio">Our Portfolio</Link>
@@ -154,7 +154,7 @@ function Header() {
                 </li>
 
                 {/* Desktop menu items */}
-                <li className="nav-item dropdown d-none d-lg-block">
+                {/* <li className="nav-item dropdown d-none d-lg-block">
                   <Link className="nav-link dropdown-toggle fw-semibold px-3 py-2" to="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                     More
                   </Link>
@@ -165,7 +165,7 @@ function Header() {
                     <li><Link className="dropdown-item" to="/blog">Blog</Link></li>
                     <li><Link className="dropdown-item" to="/training">Industrial Training</Link></li>
                   </ul>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Link className="nav-link fw-semibold px-3 py-2" to="/career">Career</Link> 

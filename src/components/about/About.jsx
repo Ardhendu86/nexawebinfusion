@@ -1,14 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Aboutbanner from "./Aboutbanner";
 import FloatingSidebar from "../floatingsidebar/FloatingSidebar";
 import aboutImage from "../../assets/images/aboutbanner.jpg";
 import Image from "../../assets/images/about.png";
-import "./About.css"; 
+import ProjectImage from "../../assets/images/image1.jpg";
+import "./About.css";
 
 function About() {
-  const aboutSectionRef = useRef(null);
-  const whyChooseSectionRef = useRef(null);
-
+  
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -179,7 +178,22 @@ function About() {
           </div>
         </div>
       </section>
-      
+
+
+      <div className="project-section">
+        <div className="project-content">
+          <h2>Have a project in Mind ?</h2>
+          <p>
+            We are here to make your dream project a reality. <br />
+            Let's come together and start to make your project a grand success.
+          </p>
+          <button className="connect-btn">Connect with us →</button>
+        </div>
+        <div className="project-image">
+          <img src={ProjectImage} alt="Team working" />
+        </div>
+      </div>
+
     </>
   );
 }

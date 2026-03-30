@@ -32,7 +32,7 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-12 col-md-6 text-center text-md-start mb-1 mb-md-0">
               <small className="d-block d-md-inline">
-                <i className="bi bi-telephone"></i> Call Us: +91-8640805196 / +91-8240015677 / +91-6295728236
+                <i className="bi bi-telephone"></i> Call Us: +91-6297995150 / +91-8640805196
               </small>
             </div>
             <div className="col-12 col-md-6 text-center text-md-end">

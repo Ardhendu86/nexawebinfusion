@@ -1,0 +1,151 @@
+.career-banner {
+  display: flex;
+  align-items: center;
+  color: white;
+  min-height: 340px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--background-image) center / cover no-repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.career-banner .container {
+  text-align: start;
+}
+
+.career-banner h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.career-banner .breadcrumb {
+  margin-top: 0.5rem;
+}
+
+.career-banner .breadcrumb-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.career-banner .breadcrumb-item.active {
+  color: #ffc107;
+}
+
+/* 30.03.2026 */
+.contact-info-section {
+  background: linear-gradient(90deg, #c7e5ff, #d8d7ff);
+  border-radius: 20px;
+  padding: 2px 0;
+}
+
+/* Desktop layout */
+.contact-item {
+  padding: 30px 20px;
+}
+
+/* Icon */
+.icon-box {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6c63ff, #5a9cff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* Text */
+.contact-item h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Fix email breaking */
+.email-text {
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+
+  .contact-info-section {
+    padding: 35px 15px;
+    min-height: 580px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-item {
+    padding: 20px 10px;
+  }
+
+  .icon-box {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .contact-item h6 {
+    font-size: 16px;
+  }
+
+  .contact-item p {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-item h6 {
+    font-size: 15px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+}
+
+
+.btn-grad {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

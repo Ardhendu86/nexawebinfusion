@@ -87,10 +87,10 @@ function Footer() {
               <h5 className="fw-bold mb-3">Contact Us</h5>
               <ul className="list-unstyled small">
                 <li className="d-flex align-items-center mb-2">
-                  <FaPhoneAlt className="me-2" /> +91-8640805196
+                  <FaPhoneAlt className="me-2" /> +91-6297995150
                 </li>
                 <li className="d-flex align-items-center mb-2">
-                  <FaPhoneAlt className="me-2" /> +91-8240015677
+                  <FaPhoneAlt className="me-2" /> +91-8640805196
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   <FaEnvelope className="me-2" /> info@nexawebinfuion.com
@@ -110,7 +110,7 @@ function Footer() {
           <hr className="border-secondary my-3" />
 
           <p className="text-center text-secondary small mb-0 text-white">
-            Copyright © 2025 All Rights Reserved by{" "}
+            Copyright © 2026 All Rights Reserved by{" "}
             <a href="#" className="text-info fw-bold text-decoration-none footer-link">
               Nexa Web Infusion
             </a>

@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import Aboutbanner from "./Aboutbanner";
 import FloatingSidebar from "../floatingsidebar/FloatingSidebar";
 import aboutImage from "../../assets/images/aboutbanner.jpg";
-import Image from "../../assets/images/about.png";
+import Image from "../../assets/images/img1.jpg";
 import ProjectImage from "../../assets/images/image1.jpg";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 function About() {
-  
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -45,11 +46,7 @@ function About() {
           <div className="row align-items-center">
             {/* Left - Image */}
             <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={Image}
-                alt="About Us"
-                className="img-fluid rounded-4 shadow about-img scroll-animate animate-on-scroll-left"
-              />
+              <img src={Image} alt="About Us" className="img-fluid rounded-4 about-img scroll-animate animate-on-scroll-left" />
             </div>
 
             {/* Right - Text */}
@@ -60,11 +57,7 @@ function About() {
                 Solution & Technology Company
               </h2>
               <p className="text-muted mb-4">
-                Coming to the main reason you found us and believe me you have
-                landed on the right website. We are a premier IT Services and
-                Digital Marketing Company in Kolkata and are happily serving the
-                digital marketing needs and requirements of every size of
-                business.
+                You’ve arrived at the right place. As a leading software company in Kolkata, we specialize in delivering high-quality, custom software solutions for businesses of all sizes.
               </p>
 
               <h3 className="fw-bold mb-3">Our Values and Ethics</h3>
@@ -72,28 +65,29 @@ function About() {
                 <li>
                   <i className="fas fa-minus text-dark me-2"></i>
                   <span className="text-warning">
-                    Rooted our business on high business ethics
+                    Committed to the highest standards of professional integrity
                   </span>
                 </li>
                 <li>
                   <i className="fas fa-minus text-dark me-2"></i>
                   <span className="text-warning">
-                    Transparency in every step
+                    Ensuring transparency in every project and process
                   </span>
                 </li>
                 <li>
                   <i className="fas fa-minus text-dark me-2"></i>
                   <span className="text-warning">
-                    The service is back up with proper documentation
+                    Delivering services supported by thorough documentation
                   </span>
                 </li>
                 <li>
                   <i className="fas fa-minus text-dark me-2"></i>
                   <span className="text-warning">
-                    We work towards innovation to achieve excellence
+                    Driving innovation to achieve excellence in software solutions
                   </span>
                 </li>
               </ul>
+
             </div>
           </div>
         </div>
@@ -105,11 +99,7 @@ function About() {
         <div className="container text-center">
           {/* Top Description */}
           <p className="text-muted mb-4 scroll-animate">
-            We have a goal to provide top-notch digital marketing services to each and every business.
-            No brand or business should remain invisible in this tech-driven market and must be there in
-            front of the whole world. Since our establishment, we served numerous clients and satisfied
-            them with our world-class solutions. From simple website designing to complete digital
-            marketing solutions, we are here to meet your business needs.
+            Our goal is to deliver top-quality software solutions to businesses of all sizes. In today’s technology-driven world, no business should be left behind, and every company deserves robust, scalable, and innovative software to succeed. Since our inception, we have served numerous clients, providing them with reliable and world-class solutions. From custom software development to complete enterprise solutions, we are dedicated to meeting the unique needs of your business.
           </p>
 
           {/* Heading */}
@@ -117,12 +107,12 @@ function About() {
             WHY CHOOSE US
           </h6>
           <h2 className="fw-bold mb-3 scroll-animate">
-            We Help You To <span className="text-warning">Increase</span> <br />
-            Your Sale Through Solutions
+            We Help You <span className="text-warning">Grow</span> <br />
+            Your Business Through Technology
           </h2>
           <p className="text-muted mb-5 scroll-animate">
-            We are a leading technology solutions providing company all over the world <br />
-            doing over 4 years.
+            We are a leading software development company delivering innovative <br />
+            and reliable technology solutions for over 4 years.
           </p>
 
           {/* List */}
@@ -131,51 +121,52 @@ function About() {
               <ul className="list-unstyled why-list">
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Fast and swift services
+                  Fast and efficient software delivery
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Reliable and trustworthy
+                  Reliable and trustworthy technology partner
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Availability round the clock
+                  Support available round the clock
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  100% Customer satisfaction
+                  100% client satisfaction guaranteed
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Designing and developing the unique website
+                  Custom software and web application development
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Affordable and pocket-friendly services
+                  Cost-effective solutions for every business
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  State-of-art facilities and infrastructures
+                  Modern infrastructure and state-of-the-art tools
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Helping you with the right strategies to get better ROI
+                  Strategic guidance to maximize ROI through technology
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  A team of qualified professionals and digital marketers
+                  A skilled team of software developers and engineers
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  The whole service cycle is backed up with proper documentation
+                  Complete project documentation for transparency and reliability
                 </li>
                 <li className="scroll-animate">
                   <i className="fas fa-check-circle text-primary me-2"></i>
-                  Last but not least; we want to be your true companion on the path of your success
+                  Partnering with you to ensure long-term success
                 </li>
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -184,10 +175,11 @@ function About() {
         <div className="project-content">
           <h2>Have a project in Mind ?</h2>
           <p>
-            We are here to make your dream project a reality. <br />
-            Let's come together and start to make your project a grand success.
+            We are here to transform your ideas into powerful software solutions. <br />
+            Let’s collaborate to turn your project into a successful and impactful technology venture.
           </p>
-          <button className="connect-btn">Connect with us →</button>
+
+          <Link to="/contact"><button className="connect-btn">Connect with us →</button></Link>
         </div>
         <div className="project-image">
           <img src={ProjectImage} alt="Team working" />

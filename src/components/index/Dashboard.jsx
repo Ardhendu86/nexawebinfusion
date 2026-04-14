@@ -3,9 +3,9 @@ import Hero from './Hero';
 
 const Dashboard = () => {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+    </>
   );
 };
 

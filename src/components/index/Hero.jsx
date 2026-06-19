@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
+import './Hero.css';
 
 const Hero = () => {
 
@@ -51,30 +52,6 @@ const Hero = () => {
       </section>
 
       {/* Services  */}
-      <section id="services" className="section bg-light">
-        <div className="container">
-          <h2 className="text-center section-title mb-5" data-aos="fade-up">Services</h2>
-          <div className="row g-4">
-            <div className="col-md-4" data-aos="zoom-in">
-              <div className="card p-4 text-center"><i className="fa fa-code fa-2x mb-3"></i>
-                <h5>Web Development</h5>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="zoom-in">
-              <div className="card p-4 text-center"><i className="fa fa-mobile fa-2x mb-3"></i>
-                <h5>Responsive Design</h5>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="zoom-in">
-              <div className="card p-4 text-center"><i className="fa fa-cloud fa-2x mb-3"></i>
-                <h5>Cloud Apps</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
       <section id="services" className="section bg-light">
         <div className="container">
           <h2 className="text-center section-title mb-5" data-aos="fade-up">Services</h2>

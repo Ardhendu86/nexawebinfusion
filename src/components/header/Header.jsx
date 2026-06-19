@@ -3,11 +3,15 @@ import { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.png";
 
 function Header() {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleServices = () => {
-    setIsServicesOpen(!isServicesOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -32,7 +36,7 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-12 col-md-6 text-center text-md-start mb-1 mb-md-0">
               <small className="d-block d-md-inline">
-                <i className="bi bi-telephone"></i> Call Us: +91-6297995150 / +91-8640805196
+                <i className="bi bi-telephone"></i> Call Us: +91-8240015677 / +91-8640805196
               </small>
             </div>
             <div className="col-12 col-md-6 text-center text-md-end">
@@ -52,7 +56,7 @@ function Header() {
         <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm ${isScrolled ? 'fixed-top' : 'sticky-top'}`}>
           <div className="container-fluid">
             {/* Logo */}
-            <Link className="navbar-brand d-flex align-items-center" to="/">
+            <Link className="navbar-brand d-flex align-items-center" to="/" onClick={closeMenu}>
               <img 
                 src={logo} 
                 alt="Nexa Web Infusion" 
@@ -71,23 +75,22 @@ function Header() {
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
+              onClick={toggleMenu}
               aria-controls="navbarNavDropdown"
-              aria-expanded="false"
+              aria-expanded={isMenuOpen}
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
 
             {/* Collapsible Menu */}
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <div className={isMenuOpen ? "collapse navbar-collapse show" : "collapse navbar-collapse"} id="navbarNavDropdown">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/">Home</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/" onClick={closeMenu}>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/about">About</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/about" onClick={closeMenu}>About</Link>
                 </li>
 
                 {/* Service Dropdown with mobile toggle */}
@@ -133,24 +136,24 @@ function Header() {
                 </li> */}
 
                 <li className="nav-item">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/portfolio">Our Portfolio</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/portfolio" onClick={closeMenu}>Our Portfolio</Link>
                 </li>
                 
                 {/* Mobile-optimized menu items with updated text */}
                 <li className="nav-item d-lg-none">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/experts">Our Experts and Innovators</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/experts" onClick={closeMenu}>Our Experts and Innovators</Link>
                 </li>
                 <li className="nav-item d-lg-none">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/testimonials">Client's Testimonials</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/testimonials" onClick={closeMenu}>Client's Testimonials</Link>
                 </li>
                 <li className="nav-item d-lg-none">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/events">Events</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/events" onClick={closeMenu}>Events</Link>
                 </li>
                 <li className="nav-item d-lg-none">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/blog">Blog</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/blog" onClick={closeMenu}>Blog</Link>
                 </li>
                 <li className="nav-item d-lg-none">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/training">Industrial Training</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/training" onClick={closeMenu}>Industrial Training</Link>
                 </li>
 
                 {/* Desktop menu items */}
@@ -168,11 +171,11 @@ function Header() {
                 </li> */}
 
                 <li className="nav-item">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/career">Career</Link> 
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/career" onClick={closeMenu}>Career</Link> 
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link fw-semibold px-3 py-2" to="/contact">Contact</Link>
+                  <Link className="nav-link fw-semibold px-3 py-2" to="/contact" onClick={closeMenu}>Contact</Link>
                 </li>
               </ul>
             </div>

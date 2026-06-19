@@ -101,7 +101,7 @@
     top: auto;
     bottom: 100px;
     right: 0;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: auto;
   }
@@ -115,7 +115,7 @@
     font-size: 14px;
   }
 
-  / .social-icon:last-child {
+   .social-icon:last-child {
     margin-right: 0;
   }
 
@@ -135,18 +135,19 @@
 
 @media screen and (max-width: 480px) {
   /* Further adjustments for very small screens */
-  /*.floating-sidebar {
+  .floating-sidebar {
     bottom: 80px;
     right: 5px;
-  }*/
+    display:flex;
+    gap: 0.6rem;
+  }
 
 
-  /*
   .social-icon {
     width: 35px;
     height: 35px;
     margin-right: 3px;
-  }*/
+  }
 
   .floating-call-button {
     height: 45px;
@@ -162,10 +163,10 @@
 
 /* Landscape orientation adjustments */
 @media screen and (max-height: 500px) and (orientation: landscape) {
-  /*.floating-sidebar {
+  .floating-sidebar {
     top: 50%;
     right: 5px;
-  }*/
+  }
 
   .floating-call-button {
     bottom: 10px;

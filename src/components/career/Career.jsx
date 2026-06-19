@@ -156,7 +156,7 @@ function career() {
                                         <FaPhoneAlt />
                                     </div>
                                     <h6>Call Us</h6>
-                                    <p>+91-6297995150</p>
+                                    <p>+91-8640805196</p>
                                 </div>
                             </div>
 

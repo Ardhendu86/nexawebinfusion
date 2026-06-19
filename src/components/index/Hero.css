@@ -1,0 +1,99 @@
+/* Theme */
+:root {
+  --primary: #4f46e5;
+  --secondary: #06b6d4;
+  --light: #f8fafc;
+  --dark: #0f172a;
+  --accent: #22c55e;
+}
+
+/* General */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 120px 0;
+}
+
+/* Sections */
+.bg-light {
+  background-color: #f1f5f9 !important;
+}
+
+#about {
+  background: #ffffff;
+}
+
+#services {
+  background: linear-gradient(to right, #eef2ff, #ecfeff);
+}
+
+#features {
+  background: #ffffff;
+}
+
+#projects {
+  background: #f8fafc;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: 0.3s;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Feature Box */
+.feature-box {
+  background: #f1f5f9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 60px;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}

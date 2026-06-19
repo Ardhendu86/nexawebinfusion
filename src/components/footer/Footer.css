@@ -37,7 +37,7 @@
 @media screen and (max-width: 768px) {
   .scroll-to-top {
     right: 15px;
-    bottom: 80px;
+    bottom: 18px;
     padding: 12px;
     font-size: 18px;
   }
@@ -46,7 +46,7 @@
 @media screen and (max-width: 768px) {
   .scroll-to-top {
     right: 15px;
-    bottom: 80px;
+    bottom: 18px;
     padding: 10px;
     font-size: 18px;
   }

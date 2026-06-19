@@ -20,25 +20,20 @@ function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to top slowly
+
   const scrollToTop = () => {
-    let scrollInterval = setInterval(() => {
-      const pos = window.scrollY;
+  window.scrollTo({
+    top: 300, // scroll smoothly close to the top
+    behavior: "smooth",
+  });
 
-      if (pos > 1000) {
-        // scroll faster when far down
-        window.scrollBy(0, -100);
-      } else if (pos > 200) {
-        // medium speed in middle
-        window.scrollBy(0, -50);
-      } else {
-        // very slow near the top
-        window.scrollBy(0, -20);
-      }
+  setTimeout(() => {
+    window.scrollTo(0, 0); // jump to the very top
+  }, 200);
+};
 
-      if (pos === 0) clearInterval(scrollInterval);
-    }, 15); // speed of interval
-  };
+  
+
 
 
   return (
@@ -87,13 +82,13 @@ function Footer() {
               <h5 className="fw-bold mb-3">Contact Us</h5>
               <ul className="list-unstyled small">
                 <li className="d-flex align-items-center mb-2">
-                  <FaPhoneAlt className="me-2" /> +91-6297995150
+                  <FaPhoneAlt className="me-2" /> +91-8240015677
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   <FaPhoneAlt className="me-2" /> +91-8640805196
                 </li>
                 <li className="d-flex align-items-center mb-2">
-                  <FaEnvelope className="me-2" /> info@nexawebinfuion.com
+                  <FaEnvelope className="me-2" /> info@nexawebinfusion.com
                 </li>
                 <li className="d-flex">
                   <FaMapMarkerAlt className="me-2 mt-1" />

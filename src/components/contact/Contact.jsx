@@ -30,7 +30,7 @@ function Contact() {
                   <FaPhoneAlt className="icon" />
                 </div>
                 <h6 className="fw-bold text-primary">Call Us</h6>
-                <p className="mb-0 fw-bold">+91+6297995150</p>
+                <p className="mb-0 fw-bold">+91+8640805196</p>
               </div>
             </div>
 

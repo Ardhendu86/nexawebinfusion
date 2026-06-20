@@ -1,27 +1,14 @@
+
 .portfolio-section {
-
-    padding: 100px 0;
-
+    /* padding: 100px 0; */
     background: #fff8f2;
-
 }
 
-
-
 .portfolio-badge {
-
-
     padding: 10px 20px;
-
     border-radius: 50px;
-
-
     color: white;
-
-
     font-weight: 700;
-
-
     background:
         linear-gradient(135deg,
             #fb8012,
@@ -308,4 +295,74 @@
 
     font-size: 17px;
 
+}
+
+@media (max-width: 991px) {
+    .portfolio-title {
+        font-size: 42px;
+    }
+
+    .achievement-wrapper {
+        padding: 40px 25px;
+        gap: 20px;
+    }
+
+    .achievement-item h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfolio-section {
+        padding: 60px 0;
+    }
+
+    .portfolio-badge {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .portfolio-title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin: 18px 0;
+    }
+
+    .portfolio-content {
+        padding: 22px 18px;
+    }
+
+    .portfolio-content h3 {
+        font-size: 22px;
+        margin: 14px 0;
+    }
+
+    .portfolio-content a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 18px;
+    }
+
+    .portfolio-card img {
+        height: 230px;
+    }
+
+    .achievement-section {
+        padding: 70px 0;
+    }
+
+    .achievement-wrapper {
+        flex-direction: column;
+        padding: 30px 18px;
+        gap: 24px;
+    }
+
+    .achievement-item h2 {
+        font-size: 40px;
+    }
+
+    .achievement-item p {
+        font-size: 15px;
+    }
 }

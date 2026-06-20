@@ -1,0 +1,311 @@
+.portfolio-section {
+
+    padding: 100px 0;
+
+    background: #fff8f2;
+
+}
+
+
+
+.portfolio-badge {
+
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+
+    color: white;
+
+
+    font-weight: 700;
+
+
+    background:
+        linear-gradient(135deg,
+            #fb8012,
+            #f74b44);
+
+}
+
+
+
+.portfolio-title {
+
+
+    font-size: 50px;
+
+    font-weight: 800;
+
+    margin: 25px 0;
+
+}
+
+
+.portfolio-title span {
+
+
+    background:
+        linear-gradient(135deg,
+            #fb8012,
+            #f74b44);
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.portfolio-card {
+
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+
+    background: white;
+
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .06);
+
+
+
+    transition: .4s;
+
+}
+
+
+
+.portfolio-card:hover {
+
+
+    transform:
+        translateY(-10px);
+
+}
+
+
+
+.portfolio-card img {
+
+
+    height: 300px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+
+
+.portfolio-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+.portfolio-content {
+
+
+    padding: 30px;
+
+}
+
+
+
+.portfolio-content span {
+
+
+    padding: 8px 16px;
+
+
+    border-radius: 50px;
+
+
+    background:
+        rgba(251, 128, 18, .1);
+
+
+    color: #fb8012;
+
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+
+.portfolio-content h3 {
+
+
+    margin: 20px 0;
+
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+
+
+.portfolio-content a {
+
+
+    padding: 12px 30px;
+
+
+    border-radius: 50px;
+
+
+    display: inline-block;
+
+
+    text-decoration: none;
+
+
+    color: white;
+
+
+
+    background:
+        linear-gradient(135deg,
+            #fb8012,
+            #f74b44);
+
+}
+
+
+
+
+.stats-section {
+
+
+    padding: 80px 0;
+
+
+
+    background:
+        linear-gradient(135deg,
+            #fb8012,
+            #f74b44);
+
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+
+.stats-section h2 {
+
+
+    font-size: 50px;
+
+    font-weight: 800;
+
+}
+
+
+
+.stats-section p {
+
+
+    opacity: .9;
+
+}
+
+
+
+
+
+
+
+
+
+.achievement-section {
+
+    padding: 100px 0;
+
+    background:
+        linear-gradient(135deg,
+            #fb8012,
+            #f74b44);
+
+}
+
+
+
+.achievement-wrapper {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+
+    background:
+        rgba(255, 255, 255, .08);
+
+
+    backdrop-filter:
+        blur(15px);
+
+}
+
+
+
+.achievement-item {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+
+.achievement-item h2 {
+
+    font-size: 60px;
+
+    font-weight: 800;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.achievement-item p {
+
+    color:
+        rgba(255, 255, 255, .85);
+
+    font-size: 17px;
+
+}
